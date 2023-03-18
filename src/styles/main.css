@@ -291,6 +291,7 @@ html, body {
   padding: 0.5rem;
   font-size: 20px;
   font-weight: 300;
+  line-height: 120%;
 }
 .section-4__image {
   width: 100%;
@@ -435,10 +436,13 @@ html, body {
   padding: 0.5rem 0;
   font-size: 13px;
   font-weight: 500;
-  text-align: left;
+  color: black;
+  line-height: 120%;
+  text-decoration: none;
 }
 .grid-2__block {
   padding: 2rem 0;
+  text-align: left;
 }
 .grid-2__block_1 {
   grid-column: col 1/col 3;
@@ -475,4 +479,80 @@ html, body {
 
 .header__link {
   padding-left: 1rem;
+}
+
+.section-news1 {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.title-news {
+  padding: 1.5rem;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.section-news2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+.section-news2__image {
+  width: 50%;
+  height: auto;
+}
+.section-news2__block {
+  width: 50%;
+  padding: 1rem;
+}
+.section-news2__subtitle {
+  margin-bottom: 1rem;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.section-news3 {
+  margin-bottom: 5rem;
+}
+.section-news3__image {
+  width: 80%;
+  padding: 1.5rem;
+}
+
+.block-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 70px;
+}
+
+.block-image {
+  text-align: center;
+  background-color: #F3F3F3;
+  width: 45%;
+}
+
+.header__link {
+  margin-right: 2rem;
+}
+
+.news-6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section-news6 {
+  padding: 3rem;
+  text-align: center;
+}
+.section-news6__block {
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */

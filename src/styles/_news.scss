@@ -1,0 +1,82 @@
+.section-news1 {
+  margin: $m-5 auto;
+  text-align: center;
+  
+}
+
+.title-news {
+  padding: $p-1-5;
+
+  font-size: $font-38;
+  font-weight: $font-w-600;
+  line-height: 120%;
+}
+// Украшения COUTURE
+.section-news2 {
+  @include flex();
+
+  margin-bottom: $m-5;
+
+  &__image {
+    width: 50%;
+    height: auto;
+  }
+
+  &__block {
+    width: 50%;
+    padding: $p-1;
+  }
+
+  &__subtitle {
+    margin-bottom: $m-1;
+    font-size: $font-34;
+    font-weight: $font-w-600;
+    line-height: 120%;
+  }
+}
+// 
+.section-news3 {
+  margin-bottom: $m-5;
+
+  &__image {
+    width: 80%;
+    padding: $p-1-5;
+
+  }
+
+}
+.block-img {
+  @include flex();
+
+  position: relative;
+  top: 70px;
+
+}
+
+.block-image {
+  text-align: center;
+  background-color: $color-gray-light;
+
+  width: 45%;
+
+}
+
+.header {
+  &__link {
+    margin-right: $m-2;
+
+  }
+}
+
+// Читайте также
+.news-6 {
+  @include flex();
+}
+.section-news6 {
+  padding: $p-3;
+  text-align: center;
+  &__block {
+    text-align: left;
+
+  }
+}

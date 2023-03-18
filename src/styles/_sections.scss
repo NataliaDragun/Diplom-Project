@@ -38,6 +38,7 @@
 
     font-size: $font-20;
     font-weight: $font-w-300;
+    line-height: 120%;
   }
 
   &__image {
@@ -215,13 +216,17 @@
 
   &__description {
     padding: $p-0-5 0;
+
     font-size: $font-13;
     font-weight: $font-w-500;
-    text-align: left;
+    color: $color-black;
+    line-height: 120%;
+    text-decoration: none;
   }
 
   &__block {
     padding: $p-2 0;
+    text-align: left;
 
   &_1 {
     grid-column: col 1 / col 3;
