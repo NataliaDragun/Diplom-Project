@@ -1,0 +1,17 @@
+.footer {
+  height: 150px;
+  background-color: $color-black;
+
+  &__block {
+    @include flex();
+
+    padding: $p-2;
+
+  }
+}
+
+.header {
+  &__link {
+    padding-left: $p-1;
+  }
+}

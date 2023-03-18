@@ -1,0 +1,56 @@
+html, body {
+  box-sizing: border-box;
+  
+  font-family: $font-family;
+  font-size: $font-12;
+
+}
+
+.container {
+  @include container();
+  
+}
+
+.lists {
+  @include flex();
+
+  padding: 0 $p-0-5;
+
+}
+
+.list {
+  list-style: none;
+
+}
+
+.link {
+  text-decoration: none;
+  font-size: $font-13;
+  color: $color-black;
+  font-weight: $font-w-600;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @include transition;
+}
+
+.title {
+  margin-bottom: $m-4;
+
+  font-size: $font-30;
+  font-weight: $font-w-600;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+

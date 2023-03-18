@@ -1,0 +1,36 @@
+.header {
+  @include flex();
+
+  padding: 0 $p-2;
+
+  height: 35px;
+  background-color: $color-black;
+
+  &__block {
+    @include flex();
+
+  }
+  
+  &__image {
+
+  }
+
+  &__description {
+    padding: 0 $p-0-5;
+    font-size: $font-10;
+    color: $color-white;
+    text-transform: uppercase;
+
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    font-size: $font-10;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @include transition;
+
+  }
+}

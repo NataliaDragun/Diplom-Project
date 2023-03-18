@@ -6,10 +6,350 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main Page</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="header__block">
+      <img src="./img/icons/pin_drop_24px.svg" alt="map" class="header__image">
+      <p class="header__description">Санкт-Петербург</p>
+    </div>
+
+    <nav class="navbar">
+      <ul class="navbar__lists">
+        <li class="navbar__list"><a href="" class="navbar__link">О компании</a></li>
+        <li class="navbar__list"><a href="" class="navbar__link">Партнерам</a></li>
+        <li class="navbar__list"><a href="" class="navbar__link">Адреса</a></li>
+        <li class="navbar__list"><a href="" class="navbar__link">Новости</a></li>
+      </ul>
+    </nav>
+
+    <a href="tel:+7(812)363-47-44" class="header__link">+7(812)363-47-44</a>
+
+  </header>
+  <main class="main">
+    <div class="block">
+      <img src="./img/logo.png" alt="logo" class="block__image">
+    </div>
+
+    <ul class="lists">
+      <li class="list"><a href="" class="link">Серьги</a></li>
+      <li class="list"><a href="" class="link">Кольца</a></li>
+      <li class="list"><a href="" class="link">Браслеты</a></li>
+      <li class="list"><a href="" class="link">Подвески</a></li>
+      <li class="list"><a href="" class="link">Колье</a></li>
+      <li class="list"><a href="" class="link">Пирсинг</a></li>
+      <li class="list"><a href="" class="link">Броши</a></li>
+      <li class="list"><a href="" class="link">Запонки</a></li>
+      <li class="list"><a href="" class="link">Изделия с деревом</a></li>
+      <li class="list"><a href="" class="link">Религиозные</a></li>
+      <li class="list"><a href="" class="link">Подарки</a></li>
+      <li class="list"><a href="" class="link">Коллекции</a></li>
+      <li class="list"><a href="" class="link">Прочее</a></li>
+    </ul>
+
+    <section class="section-1">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-block">
+              <div class="slider-block__1">
+                <img src="./img/main_page_1.jfif" alt="main" class="slider-block__image">
+                <p class="slider-block__title">Скидки до 20% на украшения<br>из красного золота</p>
+                <a href="" class="slider-block__link navbar__link">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="section-2 container">
+      <h2 class="title">С нами сотрудничают</h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="block-2">
+              <div class="slider-block__2">
+                <img src="./img/Аквамарин.png" alt="aqvamarin" class="block-2__image">
+              </div>
+              <div class="slider-block__2">
+                <img src="./img/Золотой телец.png" alt="gold" class="block-2__image">
+              </div>
+              <div class="slider-block__2">
+                <img src="./img/Poryvay.png" alt="jhouse" class="block-2__image">
+              </div>
+              <div class="slider-block__2">
+                <img src="./img/Сердолик+.png" alt="serdolic" class="block-2__image">
+              </div>
+              <div class="slider-block__2">
+                <img src="./img/Унция.png" alt="salon" class="block-2__image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <section class="section-3 container">
+      <h2 class="title">Заключите договор всего в 3 шага</h2>
+
+      <div class="section-3__block">
+        <p class="section-3__description">1</p>
+        <img src="./img/icons/call_FILL0_wght300_GRAD0_opsz48.svg" alt="call" class="material-symbols-outlined">
+        <p class="section-3__description">Оставьте заявку</p>
+      </div>
+
+      <div class="section-3__block">
+        <p class="section-3__description">2</p>
+        <img src="./img/icons/upload_file_FILL0_wght300_GRAD0_opsz48.svg" alt="upload" class="material-symbols-outlined">
+        <p class="section-3__description">Отправьте документы</p>
+      </div>
+
+      <div class="section-3__block">
+        <p class="section-3__description">3</p>
+        <img src="./img/icons/description_FILL0_wght300_GRAD0_opsz48.svg" alt="document" class="material-symbols-outlined">
+        <p class="section-3__description">Подпишите договор</p>
+      </div>
+
+      <div class="section-6__link">
+        <a href="#" class="section-6__link_view">Оставить заявку</a>
+      </div>
+    </section>
+
+    <section class="section-4 container">
+      <h2 class="title">Производство Sanis</h2>
+
+      <p class="section-4__description">Ювелирный завод «Санис» основан в 1992 году.<br>На сегодняшний день компания «Санис» является признанным грандом в области ювелирного<br>дизайна и качества исполнения ювелирных украшений.</p>
+      <img src="./img/main_page_2.jpg" alt="main" class="section-4__image">
+    </section>
+
+    <section class="section-5 container">
+      <h2 class="title">Новинки</h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="block-5">
+              <div class="slider-block__5">
+                <h3 class="block-5__subtitle">Новинка</h3>
+                <h3 class="block-5__subtitle">Хит</h3>
+                <img src="./img/украшение-1.jpg" alt="jewerly-1" class="block-5__image">
+                <p class="block-5__description">Серьги из белого золота c бриллиантами</p>
+                <p class="block-5__description_ingredients">Состав: белое золото 585 пробы, бриллианты</p>
+
+              </div>
+              <div class="slider-block__5">
+                <h3 class="block-5__subtitle">Новинка</h3>
+                <h3 class="block-5__subtitle">Хит</h3>
+                <img src="./img/украшение-2.jpg" alt="jewerly-2" class="block-5__image">
+                <p class="block-5__description">Кольцо из белого золота c бриллиантами</p>
+                <p class="block-5__description_ingredients">Состав: белое золото 585 пробы, бриллианты</p>
+              </div>
+              <div class="slider-block__5">
+                <h3 class="block-5__subtitle">Новинка</h3>
+                <h3 class="block-5__subtitle">Хит</h3>
+                <img src="./img/украшение-3.jpg" alt="jewerly-3" class="block-5__image">
+                <p class="block-5__description">Кольцо из белого золота c бриллиантами</p>
+                <p class="block-5__description_ingredients">Состав: белое золото 585 пробы, бриллианты</p>
+              </div>
+              <div class="slider-block__5">
+                <h3 class="block-5__subtitle">Новинка</h3>
+                <h3 class="block-5__subtitle">Хит</h3>
+                <img src="./img/украшение-4.jpg" alt="jewerly-4" class="block-5__image">
+                <p class="block-5__description">Серьги из белого золота c бриллиантами</p>
+                <p class="block-5__description_ingredients">Состав: белое золото 585 пробы, бриллианты</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev button-prev"></div>
+        <div class="swiper-button-next button-next"></div>
+      </div>
+
+      <img src="./img/новинки.jpg" alt="new product" class="section-5__image">
+      <p class="section-5__description">Скидки до 20% на<br>украшения из красного<br>золота</p>
+    </section>
+
+    <section class="section-6 container">
+      <h2 class="title">Каталог</h2>
+
+      <div class="grid">
+        <div class="grid-block grid__block1">
+          <p class="grid__description">Колье</p>
+          <img src="./img/1.png" alt="jewerly" class="grid__image">
+        </div>
+
+        <div class="grid-block grid__block2">
+          <p class="grid__description">Кольца</p>
+          <img src="./img/2.png" alt="jewerly" class="grid__image">
+          <a href="#" class="grid__description_2">Все</a>
+          <a href="#" class="grid__description_2">Печатки</a>
+        </div>
+
+        <div class="grid-block grid__block3">
+          <p class="grid__description">Браслеты</p>
+          <img src="./img/3.png" alt="jewerly" class="grid__image">
+          <a href="#" class="grid__description_2">На цепочке</a>
+          <a href="#" class="grid__description_2">На нитке</a><br>
+          <a href="#" class="grid__description_2">Из звеньев</a>
+          <a href="#" class="grid__description_2">Литьевые</a>
+        </div>
+
+        <div class="grid-block grid__block4">
+          <p class="grid__description">Подвески</p>
+          <img src="./img/4.png" alt="jewerly" class="grid__image">
+        </div>
+
+        <div class="grid-block grid__block5">
+          <p class="grid__description">Запонки</p>
+          <img src="./img/5.png" alt="jewerly" class="grid__image">
+        </div>
+
+        <div class="grid-block grid__block6">
+          <p class="grid__description">Подарки</p>
+          <img src="./img/6.png" alt="jewerly" class="grid__image">
+        </div>
+
+        <div class="grid-block grid__block7">
+          <p class="grid__description">Религиозные</p>
+          <img src="./img/7.png" alt="jewerly" class="grid__image">
+          <a href="#" class="grid__description_2">Христианские</a>
+          <a href="#" class="grid__description_2">Мусульманские</a>
+        </div>
+
+        <div class="grid-block grid__block8">
+          <p class="grid__description">Изделия из дерева</p>
+          <img src="./img/8.png" alt="jewerly" class="grid__image">
+          <a href="#" class="grid__description_2">Cерьги</a>
+          <a href="#" class="grid__description_2">Кресты</a>
+          <a href="#" class="grid__description_2">Подвески</a>
+          <a href="#" class="grid__description_2">Запонки</a>
+        </div>
+
+        <div class="grid-block grid__block9">
+          <p class="grid__description">Коллекции</p>
+          <img src="./img/9.png" alt="jewerly" class="grid__image">
+        </div>
+
+        <div class="grid-block grid__block10">
+          <p class="grid__description">Броши</p>
+          <img src="./img/10.png" alt="jewerly" class="grid__image">
+        </div>
+
+        <div class="grid-block grid__block11">
+          <p class="grid__description">Пирсинг</p>
+          <img src="./img/11.png" alt="jewerly" class="grid__image">
+        </div>
+      </div>
+      <div class="section-6__link">
+        <a href="#" class="section-6__link_view">Показать все</a>
+      </div>
+    </section>
+
+    <section class="section-7 container">
+      <h2 class="title">Адреса</h2>
+
+      <a href="" class="link">Магазины</a>
+      <a href="" class="link">Офисы</a>
+
+      <div class="section-7__image">
+        <div class="section-7__block">
+        <h3 class="section-7__subtitle">Санкт-Петербург</h3>
+        <ul class="section-7__lists">
+          <li class="section-7__list">Проспект Коломяжский, д.15, корп.2</li>
+          <li class="section-7__list">Проспект Наставников, д.19, стр 9</li>
+          <li class="section-7__list">Проспект Московский, д.94</li>
+          <li class="section-7__list">Проспект Наставников, д.33, стр 4</li>
+          <li class="section-7__list">Проспект Ленинский, д.130/6</li>
+          <li class="section-7__list">Проспект Коломяжский, д.15, корп.2</li>
+          <li class="section-7__list">Ул. Фурштатская, д.40</li>
+          <li class="section-7__list">Проспект Наставников, д.33, стр 4</li>
+         </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-8 container">
+      <h2 class="title">Новости</h2>
+      <a href="" class="link">Все новости &#8658;</a>
+
+      <div class="grid-2">
+        <div class="grid-2__block grid-2__block_1">
+          <img src="./img/news-1.png" alt="news" class="grid-2__image">
+          <p class="grid-2__description">16.03.2022<br>Девять причин посетить стенд «САНИС» на выставке JUNWEX Москва</p>
+        </div>
+
+        <div class="grid-2__block grid-2__block_2">
+          <img src="./img/news-2.png" alt="news" class="grid-2__image">
+          <p class="grid-2__description">04.03.2022<br>Приглашаем вас в наш конференц-зал на выставке JUNWEХ ПЕТЕРБУРГ</p>
+        </div>
+
+        <div class="grid-2__block grid-2__block_3">
+          <img src="./img/news-3.png" alt="news" class="grid-2__image">
+          <p class="grid-2__description">04.03.2022<br>Приглашаем вас в наш конференц-зал на выставке JUNWEХ ПЕТЕРБУРГ</p>
+        </div>
+
+        <div class="grid-2__block grid-2__block_4">
+          <img src="./img/news-4.png" alt="news" class="grid-2__image">
+          <p class="grid-2__description">04.03.2022<br>Приглашаем вас в наш конференц-зал на выставке JUNWEХ ПЕТЕРБУРГ</p>
+        </div>
+
+        <div class="grid-2__block grid-2__block_5">
+          <img src="./img/news-5.png" alt="news" class="grid-2__image">
+          <p class="grid-2__description">04.03.2022<br>Приглашаем вас в наш конференц-зал на выставке JUNWEХ ПЕТЕРБУРГ</p>
+        </div>
+
+      </div>  
+      </section>
+  </main>
+  <footer class="footer">
+
+    <div class="footer__block">
+      <nav class="navbar">
+        <ul class="navbar__lists">
+          <li class="navbar__list"><a href="" class="navbar__link">О компании</a></li>
+          <li class="navbar__list"><a href="" class="navbar__link">Партнерам</a></li>
+          <li class="navbar__list"><a href="" class="navbar__link">Адреса</a></li>
+          <li class="navbar__list"><a href="" class="navbar__link">Новости</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://www.google.com/maps" class="header__link">г.Санкт-Петербург, Херсонская улица 39, офис 8-02 (8-этаж)</a>
+
+      <div class="header__block">
+        <a href="tel:+7(812)363-47-44" class="header__link">+7(812)363-47-44</a>
+        <a href="tel:+7(812)363-00-00" class="header__link">+7(812)363-00-00</a>
+      </div>
+    </div>
+
+    <div class="footer__block">
+      <p class="header__description">&#169; Sanis Copyright</p>
+
+      <div class="footer__block">
+        <a href="https://ru-ru.facebook.com/" class="header__link"><img src="./img/icons/Vector.svg" alt=""></a>
+        <a href="https://www.tiktok.com/" class="header__link"><img src="./img/icons/Subtract.svg" alt=""></a>
+        <a href="https://www.instagram.com/" class="header__link"><img src="./img/icons/icon.svg" alt=""></a>
+      </div>
+
+      <a href="mailto:sales@sains.ru" class="header__link">sales@sains.ru</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="./js/swiper.js"></script>
 </body>
 </html>
