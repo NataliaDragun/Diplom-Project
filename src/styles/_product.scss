@@ -1,0 +1,107 @@
+.product {
+  padding: $p-1 0;
+
+  &-width {
+    position: relative;
+    bottom: 60px;
+    width: 30%;
+  }
+
+  &__block {
+    width: 50%;
+
+    text-align: center;
+    
+
+    &_2 {
+      width: 170px;
+      height: 170px;
+      padding: $p-1;
+
+      background-color: $color-gray;
+      text-align: center;
+
+    }
+
+    &_3 {
+      width: 240px;
+      height: 340px;
+      padding: $p-1-5 0;
+
+      background-color: $color-gray;
+      text-align: center;
+    }
+
+  }
+  &__image {
+    width: 100%;
+    object-fit: cover;
+
+    &_1 {
+      padding: $p-3;
+    }
+  }
+  &__description {
+    &_1 {
+      font-size: $font-14;
+      font-weight: $font-w-400;
+      color: $color-product;
+
+    }
+    &_2 {
+      font-size: $font-27;
+      font-weight: $font-w-500;
+
+    }
+    &_3 {
+      font-size: $font-18;
+      font-weight: $font-w-600;
+
+    }
+  }
+  &__price {
+    padding: $p-1-5;
+    border: 2px solid $color-ingredients;
+    border-radius: 10px;
+  }
+
+  &-image {
+    max-width: 100%;
+    max-height: 100%;
+
+  }  
+}
+
+.link-hover {
+  &:hover {
+    color: $color-gray-light;
+  }
+}
+
+.section-6 {
+  &__link {
+    width: 100%;
+
+  }
+} 
+
+.lists {
+  padding: $p-1-5 0;
+}
+
+.section-product {
+  &__block {
+    width: 200px;
+  }
+
+  .section-news2 {
+    justify-content: flex-start;
+
+    padding: $p-2 0;
+  }
+}
+
+// Рекомендуем
+.block-product {
+  width: 240px;
+}

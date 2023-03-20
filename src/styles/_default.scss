@@ -52,5 +52,12 @@ html, body {
   'opsz' 48
 }
 
+span {
+  margin-left: $m-1;
+  
+  text-decoration: line-through;
+  color: $color-product;
+}
+
 
 
