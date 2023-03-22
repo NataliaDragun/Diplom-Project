@@ -59,5 +59,45 @@ span {
   color: $color-product;
 }
 
+legend {
+  margin-bottom: $m-0-5;
+  padding: $p-1 0;
+
+  font-size: $font-15;
+  font-weight: $font-w-600;
+}
+
+label {
+  font-size: $font-12;
+  font-weight: $font-w-500;
+  color: $color-label;
+
+}
+
+input {
+  padding: $p-0-5 0;
+}
+
+.select {
+  margin-bottom: $m-1;
+  
+}
+
+select {
+  border: none;
+  border-bottom: 1px solid $color-black;
+}
+
+.block2 {
+  padding-bottom: $p-2;
+  text-align: end;
+
+  img {
+    padding-left: $p-1;
+  }
+
+}
+
+
 
 
