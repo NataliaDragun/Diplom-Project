@@ -1,0 +1,12 @@
+.section-order {
+  margin-top: $m-4;
+
+  &__subtitle {
+    margin-bottom: $m-2;
+    font-size: $font-15;
+    font-weight: $font-w-500;
+
+    text-align: left;
+    text-transform: uppercase;
+  }
+}

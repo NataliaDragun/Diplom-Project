@@ -1,3 +1,26 @@
+.call {
+  position: fixed;
+  left: 5px;
+  bottom: 10px;
+  z-index: 5;
+  background-color: $color-gray-light;
+
+  border: 1px solid $color-black;
+  border-radius: 5px;
+  padding: $p-0-5;
+
+  text-align: center;
+
+  &__img {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__description {
+    font-size: $font-10;
+  }
+}
+
 .block {
   display: block;
   padding: $p-1-5;
@@ -42,8 +65,7 @@
   }
 
   &__image {
-   width: 100%;
-    
+   width: 100%; 
   }
 }
 // Новинки
@@ -56,7 +78,7 @@
   &__description {
     position: relative;
     bottom: 350px;
-    left: 900px;
+    left: 870px;
     width: 490px;
     
     padding: $p-1;
@@ -64,7 +86,6 @@
     font-weight: $font-w-400;
     color: $color-white;
     line-height: 110%;
-
   }
 }
 
@@ -83,6 +104,14 @@
     font-weight: $font-w-600;
     text-transform: uppercase;
     text-align: center;
+    
+    &:hover {
+      animation-name: link;
+      animation-duration: 1.2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+    }
 
     &_view {
       @include transition();
@@ -91,9 +120,15 @@
       color: $color-white;
       text-decoration: none;
 
+      &:hover {
+        text-decoration: none;
+        color: $color-white;
+       
+      }
     }
   }
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(5, [col] 1fr) ;
@@ -118,6 +153,12 @@
       font-size: $font-13;
       font-weight: $font-w-400;
       text-decoration: none;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-black;
+        text-decoration: none;
+      }
     }
   }
 
@@ -131,14 +172,12 @@
     padding: $p-1-5;
     border: 2px solid $color-gray;
     border-radius: 5px;
-    background-color: $color-gray;
-    
+    background-color: $color-gray; 
   }
 
   &__block1 {
     grid-column: col 1 / col 3;
     grid-row: row 1 / row 3;
-
   }
 
   &__block5 {
@@ -167,8 +206,8 @@
     background-color: $color-black;
 
     text-align: left;
-
   }
+
   &__subtitle {
     padding: $p-3 $p-1;
     font-size: $font-22;
@@ -181,7 +220,6 @@
     background-image: url('../img/map.png');
     background-position: 50% 50%;
     height: 600px;
-   
   }
 
   &__list {
@@ -190,7 +228,6 @@
     list-style: none;
     color: $color-white;
     font-size: $font-14;
-   
   }
 }
 
@@ -199,8 +236,8 @@
   margin-bottom: $m-5;
 
   text-align: right;
-
 }
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(4, [col] 1fr) ;
@@ -215,6 +252,8 @@
   }
 
   &__description {
+    @include transition;
+
     padding: $p-0-5 0;
 
     font-size: $font-13;
@@ -222,6 +261,12 @@
     color: $color-black;
     line-height: 120%;
     text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-black;
+      text-decoration: none;  
+    }
   }
 
   &__block {
@@ -231,13 +276,11 @@
   &_1 {
     grid-column: col 1 / col 3;
     grid-row: row 1 / row 3;
-
   }
 
   &_2 {
     grid-column: col 3 / col 4;
     grid-row: row 1 / row 2;
-
   }
 
   &_3 {
@@ -248,13 +291,11 @@
   &_4 {
     grid-column: col 3 / col 4;
     grid-row: row 2 / row 3;
-
   }
 
   &_5 {
     grid-column: col 4 / col 5;
     grid-row: row 2 / row 3;
-
   }
 }
 }

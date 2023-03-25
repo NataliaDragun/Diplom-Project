@@ -3,27 +3,30 @@ html, body {
   
   font-family: $font-family;
   font-size: $font-12;
-
 }
 
 .container {
-  @include container();
-  
+  @include container(); 
 }
 
 .lists {
   @include flex();
 
   padding: 0 $p-0-5;
-
 }
 
 .list {
   list-style: none;
 
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .link {
+  @include transition;
+
+
   text-decoration: none;
   font-size: $font-13;
   color: $color-black;
@@ -31,7 +34,13 @@ html, body {
   text-transform: uppercase;
   cursor: pointer;
 
-  @include transition;
+  &:hover {
+    text-decoration: none;
+  
+    box-shadow: 0 5px 10px rgba(22, 6, 32, 0.4);
+    background-color: $color-beige;
+    color: $color-black;
+  }
 }
 
 .title {
@@ -41,7 +50,6 @@ html, body {
   font-weight: $font-w-600;
   text-transform: uppercase;
   text-align: center;
-
 }
 
 .material-symbols-outlined {
@@ -95,7 +103,31 @@ select {
   img {
     padding-left: $p-1;
   }
+}
 
+form {
+  width: 30%;
+  margin: $m-4 auto;
+  padding: $p-1;
+
+  &-group {
+    padding: $p-6;
+  }
+}
+
+.modal {
+  
+  &-title {
+    font-size: $font-15;
+    font-weight: $font-w-500;
+    text-decoration: underline;
+  }
+
+  &-description {
+    font-size: $font-13;
+    line-height: 1.6;
+    text-align: center;
+  }
 }
 
 

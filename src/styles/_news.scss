@@ -1,7 +1,6 @@
 .section-news1 {
   margin: $m-5 auto;
-  text-align: center;
-  
+  text-align: center; 
 }
 
 .title-news {
@@ -41,9 +40,7 @@
   &__image {
     width: 80%;
     padding: $p-1-5;
-
   }
-
 }
 .block-img {
   @include flex();
@@ -51,7 +48,6 @@
 
   position: relative;
   top: 70px;
-
 }
 
 .block-image {
@@ -59,13 +55,11 @@
   background-color: $color-gray-light;
 
   width: 45%;
-
 }
 
 .header {
   &__link {
     margin-right: $m-2;
-
   }
 }
 
@@ -73,12 +67,12 @@
 .news-6 {
   @include flex();
 }
+
 .section-news6 {
   padding: $p-3;
   text-align: center;
   
   &__block {
     text-align: left;
-
   }
 }

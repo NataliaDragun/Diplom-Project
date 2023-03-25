@@ -11,7 +11,6 @@
     width: 50%;
 
     text-align: center;
-    
 
     &_2 {
       width: 170px;
@@ -20,7 +19,6 @@
 
       background-color: $color-gray;
       text-align: center;
-
     }
 
     &_3 {
@@ -31,8 +29,8 @@
       background-color: $color-gray;
       text-align: center;
     }
-
   }
+
   &__image {
     width: 100%;
     object-fit: cover;
@@ -41,24 +39,25 @@
       padding: $p-3;
     }
   }
+
   &__description {
     &_1 {
       font-size: $font-14;
       font-weight: $font-w-400;
       color: $color-product;
-
     }
+
     &_2 {
       font-size: $font-27;
       font-weight: $font-w-500;
-
     }
+
     &_3 {
       font-size: $font-18;
       font-weight: $font-w-600;
-
     }
   }
+  
   &__price {
     padding: $p-1-5;
     border: 2px solid $color-ingredients;

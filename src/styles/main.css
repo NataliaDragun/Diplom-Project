@@ -73,15 +73,24 @@ html, body {
 .list {
   list-style: none;
 }
+.list:hover {
+  transform: scale(1.1);
+}
 
 .link {
+  transition: all 0.3s;
   text-decoration: none;
   font-size: 13px;
   color: black;
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.3s;
+}
+.link:hover {
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(22, 6, 32, 0.4);
+  background-color: #E0DBD8;
+  color: black;
 }
 
 .title {
@@ -136,6 +145,26 @@ select {
   padding-left: 1rem;
 }
 
+form {
+  width: 30%;
+  margin: 4rem auto;
+  padding: 1rem;
+}
+form-group {
+  padding: 6rem;
+}
+
+.modal-title {
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.modal-description {
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .btn {
   width: 150px;
   margin-bottom: 1rem;
@@ -143,6 +172,30 @@ select {
   font-size: 12px;
   font-weight: 500;
   color: #787878;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  border-bottom: 1px solid;
+}
+.btn__up {
+  position: fixed;
+  right: 5px;
+  bottom: 0;
+  z-index: 5;
+  width: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #F3F3F3;
+  text-align: center;
+}
+.btn__up_arrow {
+  width: 70%;
+}
+.btn__up_hide {
+  display: none;
 }
 
 .swiper {
@@ -170,7 +223,6 @@ select {
   text-align: center;
 }
 .slider-block__image {
-  width: 41.6666666667%;
   height: 100%;
 }
 .slider-block__title {
@@ -180,10 +232,8 @@ select {
   font-size: 34px;
   font-weight: 300;
 }
-.slider-block .navbar__link {
-  padding: 1.5rem;
-}
 .slider-block__link {
+  transition: all 0.3s;
   position: relative;
   bottom: 470px;
   left: 1100px;
@@ -191,7 +241,13 @@ select {
   width: 150px;
   height: 48px;
   border-radius: 5px;
+  padding: 1.5rem;
   background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.slider-block__link:hover {
+  color: white;
   text-decoration: none;
 }
 .slider-block__2 {
@@ -266,6 +322,10 @@ select {
 .navbar__list {
   list-style: none;
 }
+.navbar__list:hover {
+  transform: translateY(-3px);
+  filter: blur(0.5px);
+}
 .navbar__link {
   padding: 0 1rem;
   text-decoration: none;
@@ -274,6 +334,10 @@ select {
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s;
+}
+.navbar__link:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .header {
@@ -304,6 +368,31 @@ select {
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s;
+}
+.header__link:hover {
+  transform: translateY(-3px);
+  filter: blur(0.5px);
+  text-decoration: none;
+  color: white;
+}
+
+.call {
+  position: fixed;
+  left: 5px;
+  bottom: 10px;
+  z-index: 5;
+  background-color: #F3F3F3;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: center;
+}
+.call__img {
+  width: 30px;
+  height: 30px;
+}
+.call__description {
+  font-size: 10px;
 }
 
 .block {
@@ -352,7 +441,7 @@ select {
 .section-5__description {
   position: relative;
   bottom: 350px;
-  left: 900px;
+  left: 870px;
   width: 490px;
   padding: 1rem;
   font-size: 30px;
@@ -375,12 +464,23 @@ select {
   text-transform: uppercase;
   text-align: center;
 }
+.section-6__link:hover {
+  animation-name: link;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
 .section-6__link_view {
   transition: all 0.3s;
   position: relative;
   top: 15px;
   color: white;
   text-decoration: none;
+}
+.section-6__link_view:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .grid {
@@ -404,6 +504,11 @@ select {
   color: white;
   font-size: 13px;
   font-weight: 400;
+  text-decoration: none;
+}
+.grid__description_2:hover {
+  background-color: white;
+  color: black;
   text-decoration: none;
 }
 .grid__image {
@@ -482,11 +587,17 @@ select {
      object-fit: cover;
 }
 .grid-2__description {
+  transition: all 0.3s;
   padding: 0.5rem 0;
   font-size: 13px;
   font-weight: 500;
   color: black;
   line-height: 120%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.grid-2__description:hover {
+  color: black;
   text-decoration: none;
 }
 .grid-2__block {
@@ -733,4 +844,39 @@ select {
 .select {
   display: inline-block;
   margin-right: 6rem;
+}
+
+.section-order {
+  margin-top: 4rem;
+}
+.section-order__subtitle {
+  margin-bottom: 2rem;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@keyframes link {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-10px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  65% {
+    transform: translateX(5px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=main.css.map */

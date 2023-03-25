@@ -9,7 +9,6 @@
   &-button-prev,
   &-button-next {
     color: $color-gray;
-
   }
 }
 
@@ -30,9 +29,7 @@
   }
 
   &__image {
-    width: calc(100% / 2.4);
     height: 100%;
-    
   }
 
   &__title{
@@ -41,16 +38,12 @@
     left: 400px;
 
     font-size: $font-34;
-    font-weight: $font-w-300;
-    
-  }
-  .navbar {
-    &__link {
-      padding: $p-1-5;
-    }
+    font-weight: $font-w-300;  
   }
 
   &__link {
+    @include transition;
+    
     position: relative;
     bottom: 470px;
     left: 1100px;
@@ -59,10 +52,16 @@
     width: 150px;
     height: 48px;
     border-radius: 5px;
+    padding: $p-1-5;
 
     background-color: $color-black;
+    color: $color-white;
     text-decoration: none;
 
+    &:hover {
+      color: $color-white;
+      text-decoration: none;
+    }
   }
 
   &__2 {
@@ -73,7 +72,6 @@
     background-color: $color-gray-light;
 
     text-align: center;
-
   }
 
   &__5 {
@@ -84,18 +82,17 @@
     background-color: $color-gray-light;
 
     text-align: center;
-
   }
 }
 // С нами сотрудничают
 .block-2 {
   @include flex();
 
+  margin-bottom: $m-1;
+
   &__image {
     width: 90%;
   }
-
-  margin-bottom: $m-1;
 }
 
 // Новинки
@@ -116,8 +113,7 @@
     font-size: $font-10;
     font-weight: $font-w-600;
     color: $color-white;
-    text-transform: uppercase;
-    
+    text-transform: uppercase; 
   }
   
   &__image {
@@ -138,10 +134,7 @@
       font-weight: $font-w-400;
       text-align: left;
       color: $color-ingredients;
-
-
     }
   }
-
 }
 
