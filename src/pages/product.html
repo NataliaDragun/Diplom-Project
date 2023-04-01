@@ -46,7 +46,7 @@
     <a href="./order.html"><img src="../img/icons/корзина.svg" alt="basket"></a>
   </div>
 
-  <ul class="lists">
+  <ul class="lists" id="menuList">
     <li class="list"><a href="./product.html" class="link">Серьги</a></li>
     <li class="list"><a href="" class="link">Кольца</a></li>
     <li class="list"><a href="" class="link">Браслеты</a></li>
@@ -59,8 +59,10 @@
     <li class="list"><a href="" class="link">Религиозные</a></li>
     <li class="list"><a href="" class="link">Подарки</a></li>
     <li class="list"><a href="" class="link">Коллекции</a></li>
-    <li class="list"><a href="" class="link">Прочее</a></li>
+    <li class="list"><a href="./clock.html" class="link">Прочее</a></li>
   </ul>
+
+  <img src="../img/icons/menu.svg" alt="menu" class="menu" onclick="toggleMenu()">
 
   <div class="call">
     <a href="" class="call__link"><img src="../img/icons/support.svg" alt="support" class="call__img"></a>
@@ -90,7 +92,7 @@
       <p class="product__description_2 product">от 100 000 ₽</p>
       <p class="product__description_3 product">Размеры</p>
 
-    <div class="section-news2">
+    <div class="section-news2 price">
       <p class="product__price">15<br>250 000 ₽/шт.</p>
 
       <p class="product__price">15.5<br>250 000 ₽/шт.</p>
@@ -110,25 +112,25 @@
 
     <hr>
 
-    <ul class="lists">
+    <ul class="product-lists">
       <li class="list"><a href="" class="link link-hover">Описание</a></li>
       <li class="list"><a href="" class="link link-hover">Характеристики</a></li>
       <li class="list"><a href="" class="link link-hover">Рекомендации по уходу</a></li>
     </ul>
 
-    <p class="section-4__description product">Смелые и в тоже время элегантные серьги-кольца представляют собой современную интерпретацию классического дизайна. Многогранная и культовая коллекция Tiffany T — реальное напоминание о связях, которые мы ощущаем, но не всегда можем видеть. Сочетайте эти серьги с лаконичным колье Tiffany.</p>
+    <p class="section-4__description product product__description_4">Смелые и в тоже время элегантные серьги-кольца представляют собой современную интерпретацию классического дизайна. Многогранная и культовая коллекция Tiffany T — реальное напоминание о связях, которые мы ощущаем, но не всегда можем видеть. Сочетайте эти серьги с лаконичным колье Tiffany.</p>
 
-    <p class="product__description_3 product">Комплектация</p>
+    <p class="product__description_3 product product__description_4">Комплектация</p>
 
-    <p class="section-4__description product">Кольцо, бирка, пломба, подарочная коробочка</p>
+    <p class="section-4__description product product__description_4">Кольцо, бирка, пломба, подарочная коробочка</p>
 
   </div>
   </section>
 
   <section class="container section-product">
-    <p class="product__description_2 product">Возьмите в комплекте</p>
+    <p class="product__description_2 product m-2">Возьмите в комплекте</p>
 
-    <div class="section-news2">
+    <div class="section-news2 products">
       <div class="section-product__block">
         <div class="product__block_2">
           <img src="../img/product-page-5.png" alt="product">
@@ -148,9 +150,9 @@
   </section>
 
   <section class="container">
-    <h2 class="title-news">Рекомендуем</h2>
+    <h2 class="title-news recommend-title">Рекомендуем</h2>
 
-    <div class="section-news2">
+    <div class="section-news2 recommend">
       <div class="block-product">
         <div class="product__block_3">
           <h3 class="block-5__subtitle">Новинка</h3>
@@ -179,7 +181,7 @@
         <p class="section-4__description product">19 000&#8381;</p>
       </div>
 
-      <div class="block-product">
+      <div class="block-product recommend-block">
         <div class="product__block_3">
           <h3 class="block-5__subtitle">Новинка</h3>
           <h3 class="block-5__subtitle">Хит</h3>
@@ -189,7 +191,7 @@
         <p class="section-4__description product">21 000&#8381;<span>24 000&#8381;</span></p>
       </div>
 
-      <div class="block-product">
+      <div class="block-product recommend-block">
         <div class="product__block_3">
           <h3 class="block-5__subtitle">Хит</h3>
           <img src="../img/product-page-11.png" alt="product" class="product-image">
@@ -203,7 +205,7 @@
 
   <footer class="footer">
 
-    <div class="footer__block">
+    <div class="footer__block footer-block1">
       <nav class="navbar">
         <ul class="navbar__lists">
           <li class="navbar__list"><a href="../index.html" class="navbar__link">О компании</a></li>
@@ -213,9 +215,9 @@
         </ul>
       </nav>
 
-      <a href="https://www.google.com/maps" class="header__link">г.Санкт-Петербург, Херсонская улица 39, офис 8-02 (8-этаж)</a>
+      <a href="https://www.google.com/maps" class="header__link mg-1">г.Санкт-Петербург, Херсонская улица 39, офис 8-02 (8-этаж)</a>
 
-      <div class="header__block">
+      <div class="header__block footer-block1">
         <a href="tel:+7(812)363-47-44" class="header__link">+7(812)363-47-44</a>
         <a href="tel:+7(812)363-00-00" class="header__link">+7(812)363-00-00</a>
       </div>
@@ -235,5 +237,6 @@
   </footer>
   
   <script type="module" src="../js/scroll_up.js"></script>
+  <script src="../js/toggle_menu.js"></script>
 </body>
 </html>

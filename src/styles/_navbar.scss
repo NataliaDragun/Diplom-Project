@@ -7,9 +7,10 @@
       list-style: none;
 
     &:hover {
+      @include transition();
+
       transform: translateY(-3px);
       filter: blur(.5px);
-
     }
   }
   
@@ -21,9 +22,11 @@
     text-transform: uppercase;
     cursor: pointer;
 
-    @include transition;
+    @include transition();
 
     &:hover {
+      @include transition();
+
       text-decoration: none;
       color: $color-white;
     }

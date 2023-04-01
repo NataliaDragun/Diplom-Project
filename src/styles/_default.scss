@@ -12,7 +12,7 @@ html, body {
 .lists {
   @include flex();
 
-  padding: 0 $p-0-5;
+  padding: $p-1 $p-0-5;
 }
 
 .list {
@@ -76,6 +76,7 @@ legend {
 }
 
 label {
+  padding-bottom: $p-0-5;
   font-size: $font-12;
   font-weight: $font-w-500;
   color: $color-label;
@@ -98,6 +99,7 @@ select {
 
 .block2 {
   padding-bottom: $p-2;
+  padding-right: $p-0-5;
   text-align: end;
 
   img {
@@ -130,6 +132,10 @@ form {
   }
 }
 
+
+.menu {
+  display: none;
+}
 
 
 

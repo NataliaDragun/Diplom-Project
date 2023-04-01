@@ -1,6 +1,13 @@
 .product {
   padding: $p-1 0;
 
+  &-lists {
+    @include flex();
+
+    padding-top: $p-1;
+
+  }
+
   &-width {
     position: relative;
     bottom: 60px;
@@ -80,10 +87,6 @@
     color: $color-gray-light;
   }
 } 
-
-.lists {
-  padding: $p-1-5 0;
-}
 
 .section-product {
   &__block {

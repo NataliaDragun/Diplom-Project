@@ -1,0 +1,41 @@
+.filter-width {
+  width: 50%;
+}
+
+.clock {
+  margin: $m-1-5 auto;
+  height: 500px;
+
+  &__image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  &-product {
+    max-height: 80%;
+  }
+
+  &__description {
+    margin-left: 0;
+
+    font-weight: $font-w-700;
+    text-decoration: none !important; 
+    color: $color-black;
+  }
+}
+
+#checkbox {
+  appearance: none;
+
+  width: 14px;
+  height: 14px;
+  border-radius: 5px;
+  border: 1px solid $color-black;
+
+  &:checked::after {
+    content: '\2714';
+    margin: 0 auto;
+    color: $color-black; 
+  }
+}

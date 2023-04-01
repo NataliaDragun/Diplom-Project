@@ -27,6 +27,8 @@
     @include transition;
 
     &:hover {
+      @include transition;
+      
       transform: translateY(-3px);
       filter: blur(.5px);
 
