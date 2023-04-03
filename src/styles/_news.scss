@@ -10,7 +10,7 @@
   font-weight: $font-w-600;
   line-height: 120%;
 }
-// Украшения COUTURE
+
 .section-news2 {
   @include flex();
 
@@ -33,7 +33,7 @@
     line-height: 120%;
   }
 }
-// 
+ 
 .section-news3 {
   margin-bottom: $m-5;
 
@@ -64,7 +64,6 @@
   }
 }
 
-// Читайте также
 .news-6 {
   @include flex();
 }

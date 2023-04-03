@@ -12,14 +12,13 @@
     z-index: 2;
 
     background-color: $color-white;
-
   }
 
   .list {
     display: block;
     margin: $m-0-5 0;
-
   }
+
   .menu {
     display: block;
   }
@@ -34,8 +33,8 @@
       display: block;
       position: relative;
       top: 17px;
-
     }
+
     &__subtitle {
       display: inline-block;
       font-size: $font-12;
@@ -53,7 +52,6 @@
 
     &-block {
       margin-top: $m-2;
-
     }  
   }
 
@@ -69,7 +67,6 @@
     &__link {
       padding-left: 0;
     }
-
   }
 
   .footer {
@@ -189,7 +186,6 @@
       
       &__subtitle {
         margin: 0;
-
       }
     }
 
@@ -197,8 +193,7 @@
       width: 500px;
       margin: 0 auto;
 
-      text-align: center;
-        
+      text-align: center;    
     }
 
     .product {
@@ -286,12 +281,22 @@
     
     &-title {
       text-align: center;
-
     }
 
     &-block {
       display: none;
+    }
+  }
 
+  // CLOCK
+  .clock {
+    &-title {
+      text-align: center;
+    }
+    &-product {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: $p-1;
     }
   }
 }
@@ -310,14 +315,13 @@
     z-index: 2;
 
     background-color: $color-gray-light;
-
   }
 
   .list {
     display: block;
     margin: $m-0-5 0;
-
   }
+
   .menu {
     display: block;
   }
@@ -332,8 +336,8 @@
       display: block;
       position: relative;
       top: 17px;
-
     }
+
     &__subtitle {
       display: inline-block;
       font-size: $font-12;
@@ -351,7 +355,6 @@
 
     &-block {
       margin-top: $m-2;
-
     }  
   }
 
@@ -548,7 +551,6 @@
   // NEWS
   .title-news {
     font-size: $font-27;
-
   }
   .section-news2 {
     margin-bottom: $m-2;
@@ -563,7 +565,6 @@
 
     &__image { 
       padding-left: $m-1;
-
     }
 
     &__block {
@@ -574,6 +575,7 @@
         }
       }
     }
+
     .block-img {
       display: none;
     }  
@@ -605,6 +607,7 @@
       margin-left: $m-1;
     }
   }
+
   .product {
     margin-bottom: 0;
     padding: $p-0-5 0;
@@ -669,7 +672,6 @@
     .block-product {
       width: 70%;
       margin: $m-2 auto;
-
     }
     
     &-title {
@@ -681,7 +683,19 @@
 
     &-block {
       display: none;
+    }
+  }
 
+   // CLOCK
+   .clock {
+    &-title {
+      text-align: center;
+    }
+    &-product {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: $p-1;
+     
     }
   }
 }
@@ -699,15 +713,14 @@
     
     z-index: 2;
 
-    background-color: $color-gray-light;
-
+   background-color: $color-gray-light;
   }
 
   .list {
     display: block;
     margin: $m-0-5 0;
-
   }
+
   .menu {
     display: block;
   }
@@ -722,8 +735,8 @@
     z-index: 1;
     &__block {
       display: block;
-
     }
+
     &__subtitle {
       display: inline-block;
       font-size: $font-12;
@@ -742,7 +755,6 @@
     &-block {
       width: 100%;
       margin-top: $m-1;
-
     }  
   }
 
@@ -899,7 +911,6 @@
     &__btn {
       display: block;
       margin: $m-4 auto $m-2;
-     
     }
 
     &__description{
@@ -967,6 +978,7 @@
   .section-news1 {
     margin: 0 auto;
   }
+  
   .section-news2 {
     display: block;
     margin-bottom: $m-1;
@@ -994,6 +1006,7 @@
         }
       }
     }
+
     .block-img {
       display: none;
     }  
@@ -1021,6 +1034,7 @@
 
       text-align: center;
     }
+
     &__block {
       width: 100%;
       margin: $m-1 auto $m-3;
@@ -1036,6 +1050,7 @@
       margin-left: $m-1;
     }
   }
+
   .product {
     margin-bottom: 0;
     padding: $p-0-5 0;
@@ -1119,7 +1134,6 @@
     .block-product {
       width: 70%;
       margin: $m-2 auto;
-
     }
     
     &-title {
@@ -1131,7 +1145,18 @@
 
     &-block {
       display: none;
+    }
+  }
 
+  // CLOCK
+  .clock {
+    &-title {
+      text-align: center;
+    }
+    &-product {
+      display: block;
+      margin: 0 auto;
+     padding-bottom: $p-1;
     }
   }
 }
