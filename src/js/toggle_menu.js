@@ -13,6 +13,6 @@ filterList.style.maxHeight = '0px';
 
 function toggleOpenMenu() {
   (filterList.style.maxHeight == '0px')
-  ? filterList.style.maxHeight = '700px'
+  ? filterList.style.maxHeight = '800px'
   : filterList.style.maxHeight = '0px'
 }

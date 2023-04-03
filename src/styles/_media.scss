@@ -7,11 +7,11 @@
 
     position: absolute;
     left: 0;
-    top: 190px;
+    top: 140px;
     
     z-index: 2;
 
-    background-color: $color-white;
+    background-color: $color-gray;
   }
 
   .list {
@@ -19,8 +19,18 @@
     margin: $m-0-5 0;
   }
 
+  .link {
+    font-size: $font-12;
+  }
+
   .menu {
     display: block;
+
+    position: relative;
+    bottom: 30px;
+
+    width: 40px;
+    height: 40px;
   }
 
   #menuList {
@@ -29,10 +39,18 @@
   }
 
   .filter {
+    position: absolute;
+    width: 30%;
+
+    margin-top: $m-0-5;
+    padding-left: $p-1-5;
+
+    border-radius: 10px;
+
+    background-color: rgb(221, 220, 220);
+
     &__block {
       display: block;
-      position: relative;
-      top: 17px;
     }
 
     &__subtitle {
@@ -51,7 +69,7 @@
     }
 
     &-block {
-      margin-top: $m-2;
+      margin-top: $m-0-5;
     }  
   }
 
@@ -93,6 +111,7 @@
   .block2 {
     padding: 0;
   }
+  
 
   .slider-block {
     &__title {
@@ -152,6 +171,8 @@
   }
 
   .section-5 {
+    margin-bottom: $m-5;
+
     &__description {
      display: none;
     }
@@ -173,6 +194,8 @@
 
   // CATALOG
   .catalog {
+    position: relative;
+
     flex-direction: column;
 
     &__description{
@@ -310,7 +333,7 @@
 
     position: absolute;
     left: 0;
-    top: 190px;
+    top: 130px;
     
     z-index: 2;
 
@@ -322,8 +345,18 @@
     margin: $m-0-5 0;
   }
 
+  .link {
+    font-size: $font-12;
+  }
+
   .menu {
+    position: relative;
+    bottom: 55px;
+
     display: block;
+    width: 35px;
+    height: 35px;
+  
   }
 
   #menuList {
@@ -332,10 +365,18 @@
   }
 
   .filter {
+    position: absolute;
+    width: 30%;
+
+    margin-top: $m-0-5;
+    padding-left: $p-1-5;
+    
+    border-radius: 10px;
+
+    background-color: rgb(221, 220, 220);
+
     &__block {
       display: block;
-      position: relative;
-      top: 17px;
     }
 
     &__subtitle {
@@ -354,7 +395,7 @@
     }
 
     &-block {
-      margin-top: $m-2;
+      margin-top: $m-0-5;
     }  
   }
 
@@ -709,7 +750,7 @@
 
     position: absolute;
     left: 0;
-    top: 190px;
+    top: 125px;
     
     z-index: 2;
 
@@ -721,8 +762,17 @@
     margin: $m-0-5 0;
   }
 
+  .link {
+    font-size: $font-10;
+  }
+
   .menu {
+    position: relative;
+    bottom: 55px;
+
     display: block;
+    width: 30px;
+    height: 30px;
   }
 
   #menuList {
@@ -731,8 +781,17 @@
   }
 
   .filter {
-    width: 100%;
-    z-index: 1;
+    position: absolute;
+
+    width: 50%;
+
+    margin-top: $m-0-5;
+    padding-left: $p-1-5;
+
+    border-radius: 10px;
+
+    background-color: rgb(221, 220, 220);
+
     &__block {
       display: block;
     }
@@ -753,8 +812,7 @@
     }
 
     &-block {
-      width: 100%;
-      margin-top: $m-1;
+      margin-top: $m-0-5;
     }  
   }
 

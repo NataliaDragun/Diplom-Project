@@ -18,25 +18,25 @@
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header__block">
-      <img src="../img/icons/pin_drop_24px.svg" alt="map" class="header__image">
-      <p class="header__description">Санкт-Петербург</p>
+  <header>
+    <div class="header">
+      <div class="header__block">
+        <img src="../img/icons/pin_drop_24px.svg" alt="map" class="header__image">
+        <p class="header__description">Санкт-Петербург</p>
+      </div>
+
+      <nav class="navbar">
+        <ul class="navbar__lists">
+          <li class="navbar__list"><a href="../index.html" class="navbar__link">О компании</a></li>
+          <li class="navbar__list"><a href="" class="navbar__link">Партнерам</a></li>
+          <li class="navbar__list"><a href="" class="navbar__link">Адреса</a></li>
+          <li class="navbar__list"><a href="./news.html" class="navbar__link">Новости</a></li>
+        </ul>
+      </nav>
+
+      <a href="tel:+7(812)363-47-44" class="header__link">+7(812)363-47-44</a>
     </div>
 
-    <nav class="navbar">
-      <ul class="navbar__lists">
-        <li class="navbar__list"><a href="../index.html" class="navbar__link">О компании</a></li>
-        <li class="navbar__list"><a href="" class="navbar__link">Партнерам</a></li>
-        <li class="navbar__list"><a href="" class="navbar__link">Адреса</a></li>
-        <li class="navbar__list"><a href="./news.html" class="navbar__link">Новости</a></li>
-      </ul>
-    </nav>
-
-    <a href="tel:+7(812)363-47-44" class="header__link">+7(812)363-47-44</a>
-
-  </header>
-  <main class="main">
     <div class="block">
       <img src="../img/logo.png" alt="logo" class="block__image">
     </div>
@@ -64,7 +64,10 @@
     </ul>
 
     <img src="../img/icons/menu.svg" alt="menu" class="menu" onclick="toggleMenu()">
+  </header>
 
+  <main class="main">
+    
     <div class="call">
       <a href="" class="call__link"><img src="../img/icons/support.svg" alt="support" class="call__img"></a>
       <p class="call__description">Online помощник</p>

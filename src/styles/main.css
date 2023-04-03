@@ -965,21 +965,6 @@ form-group {
     transform: translateX(0);
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .slider-block__title {
-    left: 260px;
-    font-size: 27px;
-  }
-  .slider-block__link {
-    left: 700px;
-  }
-  .slider-block__2 {
-    margin-left: 0.5rem;
-  }
-  .block-2 {
-    flex-wrap: nowrap;
-  }
-}
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .lists {
     display: block;
@@ -987,25 +972,38 @@ form-group {
     padding: 0 1.5rem;
     position: absolute;
     left: 0;
-    top: 190px;
+    top: 140px;
     z-index: 2;
-    background-color: white;
+    background-color: #F1F1F1;
   }
   .list {
     display: block;
     margin: 0.5rem 0;
   }
+  .link {
+    font-size: 12px;
+  }
   .menu {
     display: block;
+    position: relative;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
   }
   #menuList {
     overflow: hidden;
     transition: 0.6s;
   }
+  .filter {
+    position: absolute;
+    width: 30%;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    border-radius: 10px;
+    background-color: rgb(221, 220, 220);
+  }
   .filter__block {
     display: block;
-    position: relative;
-    top: 17px;
   }
   .filter__subtitle {
     display: inline-block;
@@ -1019,7 +1017,7 @@ form-group {
     cursor: pointer;
   }
   .filter-block {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
   #filter {
     overflow: hidden;
@@ -1089,6 +1087,9 @@ form-group {
   .button-next {
     display: none;
   }
+  .section-5 {
+    margin-bottom: 5rem;
+  }
   .section-5__description {
     display: none;
   }
@@ -1099,6 +1100,7 @@ form-group {
     font-size: 10px;
   }
   .catalog {
+    position: relative;
     flex-direction: column;
   }
   .catalog__description {
@@ -1186,7 +1188,7 @@ form-group {
     padding: 0 1.5rem;
     position: absolute;
     left: 0;
-    top: 190px;
+    top: 130px;
     z-index: 2;
     background-color: #F3F3F3;
   }
@@ -1194,17 +1196,30 @@ form-group {
     display: block;
     margin: 0.5rem 0;
   }
+  .link {
+    font-size: 12px;
+  }
   .menu {
+    position: relative;
+    bottom: 55px;
     display: block;
+    width: 35px;
+    height: 35px;
   }
   #menuList {
     overflow: hidden;
     transition: 0.6s;
   }
+  .filter {
+    position: absolute;
+    width: 30%;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    border-radius: 10px;
+    background-color: rgb(221, 220, 220);
+  }
   .filter__block {
     display: block;
-    position: relative;
-    top: 17px;
   }
   .filter__subtitle {
     display: inline-block;
@@ -1218,7 +1233,7 @@ form-group {
     cursor: pointer;
   }
   .filter-block {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
   #filter {
     overflow: hidden;
@@ -1456,7 +1471,7 @@ form-group {
     padding: 0 1.5rem;
     position: absolute;
     left: 0;
-    top: 190px;
+    top: 125px;
     z-index: 2;
     background-color: #F3F3F3;
   }
@@ -1464,16 +1479,27 @@ form-group {
     display: block;
     margin: 0.5rem 0;
   }
+  .link {
+    font-size: 10px;
+  }
   .menu {
+    position: relative;
+    bottom: 55px;
     display: block;
+    width: 30px;
+    height: 30px;
   }
   #menuList {
     overflow: hidden;
     transition: 0.6s;
   }
   .filter {
-    width: 100%;
-    z-index: 1;
+    position: absolute;
+    width: 50%;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    border-radius: 10px;
+    background-color: rgb(221, 220, 220);
   }
   .filter__block {
     display: block;
@@ -1490,8 +1516,7 @@ form-group {
     cursor: pointer;
   }
   .filter-block {
-    width: 100%;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
   #filter {
     overflow: hidden;
